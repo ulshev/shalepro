@@ -1,0 +1,169 @@
+/* start main screen styles */ 
+
+#main_screen {
+    overflow: hidden;
+	height: calc(100vh - 80px);
+	min-height: 500px; // 870px;
+	clear: both;
+	//opacity: 0.5;
+    
+    .page_width {
+		height: 100%;
+		//padding-top: 130px;
+    }
+    
+    
+    .images {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		@include transition(all);
+		//opacity: 0.2;
+		overflow: hidden;
+		
+		div {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: no-repeat center center / cover;
+		}
+    }
+    .text {
+		//width: 50%;        
+		max-width: 730px;
+		position: relative;
+		top: 41.7%;
+		padding-bottom: 1px;
+		//z-index: 2;
+		color: #fff;
+    }
+    h1 {
+		color: $color_a;
+	
+		.black {
+			color: $color_text;
+		}
+	}
+	
+	
+    
+    .button {
+		// min-width: 173px;
+		margin-bottom: 72px;
+		margin-top: 0;
+		// height: 50px;
+		// line-height: 48px;
+    }
+    
+    p {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 60px;
+		max-width: 600px;
+    }
+    
+}
+
+
+// @media screen and (min-width: 1400px) {
+//     #main_screen {
+// 		h1 {
+			     
+// 		}
+// 	}
+// }
+@media screen and (max-width: 1500px) {
+	#main_screen {
+		.text {       
+			top: 33.3%;      
+			max-width: 670px;
+		}
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	#main_screen {
+		min-height: 400px;
+		height: calc(100vh - 70px);
+		.text {
+			top: 20%;
+			max-width: 400px;
+
+			h1 {
+				color: $color_text;
+				text-shadow: 0px 4px 25px rgba(255, 255, 255, 0.55);
+			}
+
+			p {
+				margin-bottom: 35px;
+			}
+		}
+		.images div {
+			background-position: 70% 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#main_screen {
+		.images div {
+			background-position: 60% 50%;
+		}
+	}
+}
+@media screen and (max-width: 800px) {
+    #main_screen {
+		min-height: 450px;
+		height: calc(100vh - 60px);
+		h1 {
+			font-size: 30px;
+			line-height: 42px; 
+			letter-spacing: 0px;        
+		}
+		p {
+			text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.55);
+		}
+		.text {
+			top: 13.3%;
+			max-width: 400px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+    #main_screen {
+		min-height: 300px;
+		.text {
+			top: 10%;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+		.images div {
+			background-position: 70% 15%;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+    #main_screen {
+		.text {
+			top: 20px;
+		}
+		h1 {
+			line-height: 30px;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.images div {
+			background-position: 66% 15%;
+		}
+	}
+}
+
+/* end main screen styles */

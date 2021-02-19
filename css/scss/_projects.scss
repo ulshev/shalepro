@@ -15,6 +15,12 @@
         //padding-bottom: 100px;
     }
 
+    .all_link {
+        color: #fff;
+    }
+    .all_link::after, .more::after {
+        filter: brightness(0.5) contrast(300%) invert(1);
+    }
 }
 
 
@@ -72,7 +78,7 @@
             box-sizing: border-box;
             color: #fff;
             padding-left: 8px;
-            padding-top: 99px;
+            //padding-top: 99px;
 
             a {
                 color: #fff;
@@ -97,9 +103,7 @@
             .button {
                 color: $color_text;
             }
-            .all_link::after, .more::after {
-                filter: brightness(0.5) contrast(300%) invert(1);
-            }
+            
         }
 
         .image {
@@ -157,7 +161,7 @@
             height: 100%;
             width: 100%;
             border: 1px solid $color_text;
-            z-index: 2;
+            z-index: 1;
             box-sizing: border-box;
             @include transition(all);
         }
@@ -167,6 +171,7 @@
             width: 100%;
             height: 100%;
             z-index: 1;
+            overflow: hidden;
 
             &::before {
                 content: '';
@@ -177,6 +182,7 @@
                 height: 100%;
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
                 opacity: 1;
+                z-index: 1;
                 @include transition(all);
             }
 
@@ -184,6 +190,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                @include transition(all);
             }
         }
 
@@ -285,6 +292,9 @@
             overflow: visible;
             &::before, .image::before {
                 opacity: 0;
+            }
+            .image img {
+                transform: scale(1.05);
             }
         }
 

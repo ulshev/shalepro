@@ -375,7 +375,7 @@
 
         input[type=text] {
             padding: 0;
-            width: 100px;
+            width: 80px;
             border: 0;
             height: 20px;
             color: #fff;
@@ -386,6 +386,8 @@
             vertical-align: middle;
             font-weight: 500;
             background: none;
+            text-align: center;
+            margin-right: 5px;
 
             &:focus {
                 background: none;
@@ -457,14 +459,16 @@
         width: 132px;
     }
     
-    .buttons input[type="reset"], .reset{
-        color: #fff;
-        background: transparent;
-        border: 1px solid #fff;
-        
-        &:hover {
+    .buttons {
+        input[type="reset"], .reset, .nobg{
             color: #fff;
-            //background-color: $color_a_hover; 
+            background: transparent;
+            border: 1px solid #fff;
+            
+            &:hover {
+                color: $color_text;
+                background-color: #fff; 
+            }
         }
     }
 

@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	// $(window).on('load', function () {
-	//     var $preloader = $('#preloader'),
-	// 	$spinner   = $preloader.find('#preloader img');
-	//     $spinner.fadeOut();
-	//     $preloader.delay(350).fadeOut('slow');
-	// });
+	$(window).on('load', function () {
+	    var $preloader = $('#preloader'),
+		$spinner   = $preloader.find('#preloader img');
+	    $spinner.fadeOut();
+	    $preloader.delay(1000).fadeOut();
+	});
 
 
 	// Убираем placeholder при клике в поле

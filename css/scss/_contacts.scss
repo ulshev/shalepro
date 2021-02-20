@@ -17,6 +17,20 @@
         color: $color_text;
     }
 
+    .tel, .email {
+        width: 200px;
+    }
+
+    .tel::before {
+        background-image: url(images/icon_tel2.svg);
+    }
+    .email::before {
+        background-image: url(images/icon_email2.svg);
+    }
+    .address::before {
+        background-image: url(images/icon_address2.svg);
+    }
+
     >* {
         //width: 340px;
         margin-bottom: 20px;

@@ -27,6 +27,22 @@ $(document).ready(function() {
 			}
 		});
 	//};
+
+	// добавляем класс в пункты с подменю
+	$('ul.menu > li').each(function(){
+		var list = $(this).children('ul');
+
+		if(list.length > 0){
+			list.parent().addClass('submenu');
+		};
+	});
+	$('.submenu > ul > li').each(function(){
+		var list = $(this).children('ul');
+
+		if(list.length > 0){
+			list.parent().addClass('submenu2');
+		};
+	});
 	
 	// animation
 	$(window).on('load', function () {

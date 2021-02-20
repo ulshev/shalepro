@@ -127,7 +127,7 @@
 		font-family: $font_family_os;
 		font-size: 16px;
 		line-height: 18px;
-		font-weight: 300;
+		font-weight: 400; //300;
 		vertical-align: top;
 		position: relative;
 		z-index: 1;
@@ -227,7 +227,7 @@
 		//font-size: 12px;
 		//line-height: 17px;
 		clear: both;
-		font-weight: 300;
+		font-weight: 400; //300;
 		@include transition(all);
 		
 		&:before {

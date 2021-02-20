@@ -75,6 +75,11 @@
     -webkit-transform: translate(0%, 5%);
     transform: translate(0%, 5%);
 }
+#main_screen.main_section .images div.image3 { 
+    opacity: 0;
+    -webkit-transform: translate(0%, -5%);
+    transform: translate(0%, -5%);
+}
 #main_screen.main_section.animated .images div {
     opacity: 1; 
     -webkit-transform: translate(0%, 0%);
@@ -83,16 +88,16 @@
     // transition: opacity 500ms 50ms ease-in-out, transform 500ms 250ms ease-in-out;
 
     &.image1 {
-        -webkit-transition: opacity 1000ms 1000ms ease-in-out, -webkit-transform 1000ms 1000ms ease-in-out;
-        transition: opacity 1000ms 1000ms ease-in-out, transform 1000ms 1000ms ease-in-out;
+        -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
+        transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
     }
     &.image2 {
-        -webkit-transition: opacity 1000ms 1000ms ease-in-out, -webkit-transform 1000ms 1000ms ease-in-out;
-        transition: opacity 1000ms 1000ms ease-in-out, transform 1000ms 1000ms ease-in-out;
+        -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
+        transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
     }
     &.image3 {
-        -webkit-transition: opacity 1500ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
-        transition: opacity 1500ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
+        -webkit-transition: opacity 1500ms 2500ms ease-in-out, -webkit-transform 1500ms 2500ms ease-in-out;
+        transition: opacity 1500ms 2500ms ease-in-out, transform 1500ms 2500ms ease-in-out;
     }
 }
 
@@ -105,18 +110,18 @@
 #main_screen.main_section.animated .text {
     h1 {
         opacity: 1;
-        -webkit-transition: opacity 300ms 450ms ease-in-out;
-        transition: opacity 300ms 450ms ease-in-out;
+        -webkit-transition: opacity 1000ms 3000ms ease-in-out;
+        transition: opacity 1000ms 3000ms ease-in-out;
     }
     p { 
         opacity: 1;
-        -webkit-transition: opacity 300ms 500ms ease-in-out;
-        transition: opacity 300ms 500ms ease-in-out;
+        -webkit-transition: opacity 1000ms 3200ms ease-in-out;
+        transition: opacity 1000ms 3003200ms0ms ease-in-out;
     }
     .button {
         opacity: 1;
-        -webkit-transition: opacity 300ms 550ms ease-in-out;
-        transition: opacity 300ms 550ms ease-in-out;
+        -webkit-transition: opacity 1000ms 3400ms ease-in-out;
+        transition: opacity 1000ms 3400ms ease-in-out;
     }
 }
 

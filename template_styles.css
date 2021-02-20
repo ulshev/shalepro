@@ -75,7 +75,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   min-width: 320px;
-  font-weight: 200;
+  font-weight: 400;
   color: #212121;
 }
 
@@ -623,6 +623,7 @@ ul.slick-dots li button {
 
 .pagination {
   text-align: center;
+  margin-bottom: 60px;
 }
 .pagination ul li {
   display: inline-block;
@@ -911,6 +912,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   line-height: 21px;
   clear: both;
   padding: 20px 0;
+  font-weight: 300;
 }
 .main_menu a {
   color: #fff;
@@ -1358,8 +1360,8 @@ body.compensate-for-scrollbar, .fancybox-enabled {
 .catalog .item:before {
   content: "";
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
   border: 2px solid;
@@ -1863,10 +1865,12 @@ body.compensate-for-scrollbar, .fancybox-enabled {
 }
 .description .all_link {
   margin-top: 14px;
+  margin-bottom: 20px;
 }
 .description h1 {
   font-size: 40px;
   line-height: 44px;
+  clear: right;
 }
 .description .campaign {
   margin-bottom: 30px;
@@ -1909,7 +1913,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   border-right: 0;
 }
 .description .characteristics_main .name {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1929,18 +1933,17 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   position: relative;
   border-bottom: 1px solid #EAEAEA;
   padding-bottom: 2px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .description .characteristics_other .char {
   display: flex;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 .description .characteristics_other .char .name {
   width: 170px;
   padding-right: 30px;
-  font-weight: 300;
 }
 .description .characteristics_other .char .strong {
   font-weight: 700;
@@ -3242,16 +3245,17 @@ body.compensate-for-scrollbar, .fancybox-enabled {
 }
 #about_page h1 {
   float: left;
+  margin-top: -30px;
 }
 #about_page .all_link {
-  margin-top: 21px;
+  margin-top: 5px;
 }
 #about_page .slogan {
   width: 610px;
   left: 10px;
-  margin: -52px auto 62px;
+  margin: -72px auto 45px;
   text-align: center;
-  padding: 32px 20px 28px 0;
+  padding: 22px 20px 22px 0;
   position: relative;
   box-sizing: border-box;
 }
@@ -3275,6 +3279,9 @@ body.compensate-for-scrollbar, .fancybox-enabled {
 #about_page .slogan .logo {
   margin-bottom: 13px;
 }
+#about_page .slogan .logo img {
+  width: 250px;
+}
 #about_page .slogan p {
   margin-bottom: 0;
   font-size: 18px;
@@ -3284,26 +3291,30 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 60px 0 40px;
+  padding: 30px 0 30px;
   background: #212121 url(images/bg_about_text.png) no-repeat center/auto 100%;
   margin-bottom: 140px;
 }
 #about_page .text_block .image {
-  width: 56%;
+  width: 50%;
   text-align: center;
   margin: -150px 0;
 }
 #about_page .text_block .image img {
   max-width: 90%;
-  max-height: 100%;
+  height: 100%;
   object-fit: cover;
+  max-height: 400px;
 }
 #about_page .text_block .text {
-  width: 41%;
+  width: 45%;
   padding-left: 33px;
 }
+#about_page .text_block h2 {
+  margin-bottom: 20px;
+}
 #about_page .text_block .button {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* end about styles */
@@ -3520,7 +3531,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
 .projects_container {
   position: relative;
   margin: 0 -15px;
-  padding: 15px 0 0px;
+  padding: 15px 0 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -3530,10 +3541,10 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   margin: 0 15px 30px;
   height: 450px;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .projects_container .item::after {
   content: "";
@@ -3545,10 +3556,10 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   border: 1px solid #212121;
   z-index: 1;
   box-sizing: border-box;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .projects_container .item .image {
   position: relative;
@@ -3567,19 +3578,19 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   opacity: 1;
   z-index: 1;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .projects_container .item .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .projects_container .item .info {
   position: absolute;
@@ -3593,10 +3604,10 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 .projects_container .item .text {
   width: 425px;
@@ -3963,7 +3974,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 300;
+  font-weight: 400;
   vertical-align: top;
   position: relative;
   z-index: 1;
@@ -4059,7 +4070,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   display: inline-block;
   text-align: left;
   clear: both;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -4599,7 +4610,7 @@ footer .social a {
 }
 
 div.content .page_width {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 .breadcrumbs {
@@ -5667,22 +5678,28 @@ div.content .page_width {
   transform: translate(0%, 5%);
 }
 
+#main_screen.main_section .images div.image3 {
+  opacity: 0;
+  -webkit-transform: translate(0%, -5%);
+  transform: translate(0%, -5%);
+}
+
 #main_screen.main_section.animated .images div {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
 }
 #main_screen.main_section.animated .images div.image1 {
-  -webkit-transition: opacity 1000ms 1000ms ease-in-out, -webkit-transform 1000ms 1000ms ease-in-out;
-  transition: opacity 1000ms 1000ms ease-in-out, transform 1000ms 1000ms ease-in-out;
+  -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
+  transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
 }
 #main_screen.main_section.animated .images div.image2 {
-  -webkit-transition: opacity 1000ms 1000ms ease-in-out, -webkit-transform 1000ms 1000ms ease-in-out;
-  transition: opacity 1000ms 1000ms ease-in-out, transform 1000ms 1000ms ease-in-out;
+  -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
+  transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
 }
 #main_screen.main_section.animated .images div.image3 {
-  -webkit-transition: opacity 1500ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
-  transition: opacity 1500ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
+  -webkit-transition: opacity 1500ms 2500ms ease-in-out, -webkit-transform 1500ms 2500ms ease-in-out;
+  transition: opacity 1500ms 2500ms ease-in-out, transform 1500ms 2500ms ease-in-out;
 }
 
 #main_screen.main_section .text h1, #main_screen.main_section .text p, #main_screen.main_section .text .button {
@@ -5691,18 +5708,18 @@ div.content .page_width {
 
 #main_screen.main_section.animated .text h1 {
   opacity: 1;
-  -webkit-transition: opacity 300ms 450ms ease-in-out;
-  transition: opacity 300ms 450ms ease-in-out;
+  -webkit-transition: opacity 1000ms 3000ms ease-in-out;
+  transition: opacity 1000ms 3000ms ease-in-out;
 }
 #main_screen.main_section.animated .text p {
   opacity: 1;
-  -webkit-transition: opacity 300ms 500ms ease-in-out;
-  transition: opacity 300ms 500ms ease-in-out;
+  -webkit-transition: opacity 1000ms 3200ms ease-in-out;
+  transition: opacity 1000ms 3003200ms0ms ease-in-out;
 }
 #main_screen.main_section.animated .text .button {
   opacity: 1;
-  -webkit-transition: opacity 300ms 550ms ease-in-out;
-  transition: opacity 300ms 550ms ease-in-out;
+  -webkit-transition: opacity 1000ms 3400ms ease-in-out;
+  transition: opacity 1000ms 3400ms ease-in-out;
 }
 
 #main_form.main_section h2 {

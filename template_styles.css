@@ -870,6 +870,9 @@ body.compensate-for-scrollbar, .fancybox-enabled {
 .social > * {
   margin: 0 5px;
 }
+.social > *:first-child {
+  margin-left: 0;
+}
 
 .contacts {
   position: relative;
@@ -3622,6 +3625,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  background-color: #212121;
 }
 .projects_container .item .image::before {
   content: "";
@@ -5751,8 +5755,8 @@ div.content .page_width {
   transform: translate(0%, 0%);
 }
 #main_screen.main_section.animated .images div.image1 {
-  -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
-  transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
+  -webkit-transition: opacity 1000ms 1000ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
+  transition: opacity 1000ms 1000ms ease-in-out, transform 1500ms 1500ms ease-in-out;
 }
 #main_screen.main_section.animated .images div.image2 {
   -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;

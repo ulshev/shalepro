@@ -88,8 +88,8 @@
     // transition: opacity 500ms 50ms ease-in-out, transform 500ms 250ms ease-in-out;
 
     &.image1 {
-        -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
-        transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
+        -webkit-transition: opacity 1000ms 1000ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;
+        transition: opacity 1000ms 1000ms ease-in-out, transform 1500ms 1500ms ease-in-out;
     }
     &.image2 {
         -webkit-transition: opacity 1000ms 1500ms ease-in-out, -webkit-transform 1500ms 1500ms ease-in-out;

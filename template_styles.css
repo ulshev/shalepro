@@ -5678,12 +5678,6 @@ div.content .page_width {
   transform: translate(0%, 5%);
 }
 
-#main_screen.main_section .images div.image3 {
-  opacity: 0;
-  -webkit-transform: translate(0%, -5%);
-  transform: translate(0%, -5%);
-}
-
 #main_screen.main_section.animated .images div {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);

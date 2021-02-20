@@ -52,6 +52,7 @@ $(document).ready(function() {
 			$('#header').addClass('animated');
 			$('#main_screen').addClass('animated');
 		};
+	});
 		$(window).on('load scroll', function(){
 			$('.main_section').each(function(){
 			if ( $(this).offset().top < ($(document).scrollTop() + window.innerHeight*0.6 ) ) {
@@ -59,7 +60,7 @@ $(document).ready(function() {
 			}
 			});
 		});
-	});
+	
 
 	// tab switching
 	$('.tab_buttons span').on('click', function(){ 

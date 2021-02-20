@@ -96,8 +96,8 @@
         transition: opacity 1000ms 1500ms ease-in-out, transform 1500ms 1500ms ease-in-out;
     }
     &.image3 {
-        -webkit-transition: opacity 1500ms 2500ms ease-in-out, -webkit-transform 1500ms 2500ms ease-in-out;
-        transition: opacity 1500ms 2500ms ease-in-out, transform 1500ms 2500ms ease-in-out;
+        -webkit-transition: opacity 1500ms 2500ms ease-in-out, -webkit-transform 2000ms 2500ms ease-in-out;
+        transition: opacity 1500ms 2500ms ease-in-out, transform 2000ms 2500ms ease-in-out;
     }
 }
 
@@ -110,18 +110,18 @@
 #main_screen.main_section.animated .text {
     h1 {
         opacity: 1;
-        -webkit-transition: opacity 1000ms 3000ms ease-in-out;
-        transition: opacity 1000ms 3000ms ease-in-out;
+        -webkit-transition: opacity 1500ms 3000ms ease-in-out;
+        transition: opacity 1500ms 3000ms ease-in-out;
     }
     p { 
         opacity: 1;
-        -webkit-transition: opacity 1000ms 3200ms ease-in-out;
-        transition: opacity 1000ms 3003200ms0ms ease-in-out;
+        -webkit-transition: opacity 1500ms 3200ms ease-in-out;
+        transition: opacity 1500ms 3003200ms0ms ease-in-out;
     }
     .button {
         opacity: 1;
-        -webkit-transition: opacity 1000ms 3400ms ease-in-out;
-        transition: opacity 1000ms 3400ms ease-in-out;
+        -webkit-transition: opacity 1500ms 3400ms ease-in-out;
+        transition: opacity 1500ms 3400ms ease-in-out;
     }
 }
 

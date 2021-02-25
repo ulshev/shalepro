@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     padding-top: 20px;
     position: relative;
+    clear: both;
 
     .item {
         width: calc(33.33% - 30px);
@@ -45,7 +46,7 @@
                     height: 100%;
                     top: 0;
                     left: 0;
-                    opacity: 1;
+                    opacity: 0;
                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
                     @include transition(all);
                 }
@@ -73,7 +74,7 @@
 
         &:hover {
             .image a::before {
-                opacity: 0;
+                opacity: 1;
             }
         }
 
@@ -105,6 +106,7 @@
 
         .blog_container {
             margin: 0 -15px 5px;
+            clear: both;
         }
     }
 
@@ -118,10 +120,10 @@
         &::before {
             content: '';
             position: absolute;
-            width: 94.1%;
+            width: calc(100% - 30px); //94.1%;
             height: 93.7%;
             top: -0.2%;
-            left: -17.2%;
+            left: -100px; //-17.2%;
             border: 2px solid;
             border-image-slice: 1;
             border-image-source: linear-gradient(161.57deg, #CCA04A 11.76%, #FFE2AE 100%);
@@ -140,16 +142,17 @@
 
         h2 {
             position: relative;
-            z-index: 2;
+            z-index: 1;
         }
 
         .all_link {
-            z-index: 2;
+            z-index: 1;
         }
     }
     .reviews_container {
         display: block;
         margin: 0;
+        clear: both;
     
         .item {
             border: 0;
@@ -401,31 +404,167 @@
     }
 }
 
-
-@media screen and (max-width: 1600px) {
-    
+.gUniFormModalWindow.form_block .gUniFormModalWindowContainer .review_item {
+    padding: 10px 0 10px;
+    border-top: 0;
 }
-@media screen and (max-width: 1400px) {
+// @media screen and (max-width: 1600px) {
     
+// }
+// @media screen and (max-width: 1400px) {
+    
+// }
+
+@media screen and (max-width: 1300px) {
+    .blog_container .item .image {
+        height: 250px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    
-}
+@media screen and (max-width: 1030px) {
+    .blog_container .item {
+        width: calc(50% - 30px);
+    }
 
-@media screen and (max-width: 1100px) {
-    
+    .reviews_container .item {
+        width: calc(100% - 30px);
+        .info {
+            //width: calc(100% - 90px);
+            padding-bottom: 75px;
+        }
+    }
+
+    .blog_rev {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        padding-top: 0;
+        .blog {
+            position: relative;
+            min-width: 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .reviews {
+            min-width: 90%;
+            max-width: 90%;
+            padding-right: 30px;
+            margin-left: 10.5%;
+        }
+
+        .reviews_container {
+            display: block;
+            margin: 0 0 40px;
+            padding-bottom: 1px;
+
+            .item {
+                .info {
+                    width: calc(100% - 90px);
+                    //padding-bottom: 75px;
+                }
+            }
+        }
+    }
+    .left_col .text {
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    
+    .blog_rev .reviews::before {
+        left: -70px;
+    }
 }
 @media screen and (max-width: 600px) {
-    
+    .blog_container .item {
+        width: calc(100% - 30px);
+    }
+
+    .left_col .blog_container .item {
+        width: calc(100% - 30px);
+    }
+    .blog_rev {
+        margin-bottom: 30px;
+        .blog .item {
+            width: calc(100% - 30px);
+        }
+        .reviews::before {
+            left: -50px;
+        }
+    } 
+    .blog_rev .reviews {
+        padding-right: 15px;
+    }
+    .blog_rev .reviews_container .item .image {
+        margin-right: 10px;
+    }
+    .reviews_container .item .info {
+        width: calc(100% - 70px);
+        padding-bottom: 75px;
+    }
+
+    .tabs_container {
+        .reviews_container .item {
+            padding: 20px;
+
+            &.letter {
+                .loupe {
+                    position: relative;
+                    top: -70px;
+                    left: 110%;
+                }
+            }
+
+            .info {
+                width: 100%;
+                padding-bottom: 25px;
+                padding-top: 15px;
+            }
+
+            &.video {
+                padding: 0px;
+                .image {
+                    height: 300px;
+
+                    a:after {
+                        background-size: 120px 120px;
+                    }
+                }
+            }
+        }
+    }
+    .left_col .image {
+        height: 300px;
+    }
+    .left_col .text h2 {
+        margin-top: 40px;
+    }
+    .left_col .text {
+        padding-bottom: 30px;
+    }
+    .reviews_container .photos {
+        margin-bottom: 0px;
+        .empty {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
-    
+    .blog_rev .reviews::before {
+        left: -30px;
+        top: 30px;
+    }
+    .blog_rev .reviews::after {
+        height: 100%;
+        top: -5%;
+    }
+    .left_col .image {
+        height: 200px;
+    }
+    .tabs_container .reviews_container .item.video .image {
+        height: 250px;
+    }
 }
 
 /* end about styles */

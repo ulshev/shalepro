@@ -51,10 +51,27 @@ body {
     position: relative;
     width: 100%;
     min-height: 100%;
+    //padding-top: 80px;
     
 	//background:  url(images/site.jpg) no-repeat center top;
 	//background-size: 1920px auto;
 }
+
+// @media screen and (max-width: 1030px) {
+//     .wrapper {
+//         padding-top: 70px;
+//     }
+// }
+// @media screen and (max-width: 800px) {
+//     .wrapper {
+//         padding-top: 60px;
+//     }
+// }
+// @media screen and (max-width: 450px) {
+//     .wrapper {
+//         padding-top: 50px;
+//     }
+// }
 
 // #page404 {
 //     .wrapper {
@@ -66,7 +83,6 @@ body {
     overflow: hidden;
     position: relative;
     width: 100%;
-    
 }
 .page_width {
     padding: 0px 90px;
@@ -237,7 +253,7 @@ h6, .h6 {
     vertical-align: middle;
     box-sizing: border-box;
     position: relative;
-    z-index: 1;
+    //z-index: 1;
     text-align: center;
     text-decoration: none !important;
     //text-transform: uppercase;
@@ -687,12 +703,12 @@ ul.slick-dots {
     overflow: visible;
     //padding-top: 8px;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 .tab_buttons {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     //height: 55px;
 	margin: 0 auto 25px;
 	//padding-top: 10px;
@@ -700,6 +716,7 @@ ul.slick-dots {
     //border: 2px solid #134983;
     display: flex;
     //justify-content: space-between;
+    flex-wrap: wrap;
 	
     span, a {
 		cursor: pointer;
@@ -896,6 +913,32 @@ body.compensate-for-scrollbar, .fancybox-enabled {
     animation-delay: 0s; 
     -webkit-animation-name: preloader; 
     animation-name: preloader;
+
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    @-webkit-keyframes preloader2 {
+        0% { width: 80px; }
+        50% { width: 80px; }
+        100% { width: 250px; }
+    }
+      
+    @keyframes preloader2 {
+        0% { width: 80px; }
+        50% { width: 80px; }
+        100% { width: 250px; }
+    }
+
+    #preloader {
+        .img {
+            -webkit-animation-name: preloader2; 
+            animation-name: preloader2;
+            img {
+                width: 250px;
+            }
+        }
     }
 }
 

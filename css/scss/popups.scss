@@ -168,26 +168,33 @@
     }
 }
 
-@media screen and (max-width: 1600px) {
+// @media screen and (max-width: 1600px) {
     
-}
-@media screen and (max-width: 1400px) {
+// }
+// @media screen and (max-width: 1400px) {
     
-}
+// }
 
-@media screen and (max-width: 1200px) {
+// @media screen and (max-width: 1200px) {
     
-}
+// }
 
-@media screen and (max-width: 1100px) {
+// @media screen and (max-width: 1100px) {
     
-}
+// }
 
-@media screen and (max-width: 800px) {
+// @media screen and (max-width: 800px) {
     
-}
+// }
 @media screen and (max-width: 600px) {
-    
+    .gUniFormModalWindow.form_block .gUniFormModalWindowContainer, .gUniFormSuccess.form_success .gUniFormSuccessContainer {
+        width: 300px;
+        padding: 40px 25px;
+    }
+    .gUniFormModalWindow.form_block .gUniFormModalWindowExit, .gUniFormSuccess.form_success .gUniFormSuccessExit {
+        top: 15px;
+        right: 15px;
+    }
 }
 
 @media screen and (max-width: 450px) {

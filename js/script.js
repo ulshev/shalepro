@@ -1,12 +1,17 @@
+$(window).on('load', function () {
+	var $preloader = $('#preloader'); //,
+	$spinner = $preloader.find('#preloader img');
+	$spinner.fadeOut();
+	$('#preloader').delay(1000).fadeOut('slow');
+
+	if ( window.innerWidth>0 ){
+		$('#header').toggleClass("hidden");
+		$('.main_section').toggleClass("hidden");
+		$('#header').addClass('animated');
+		$('#main_screen').addClass('animated');
+	};
+});
 $(document).ready(function() {
-	$(window).on('load', function () {
-	    var $preloader = $('#preloader'),
-		$spinner   = $preloader.find('#preloader img');
-	    $spinner.fadeOut();
-	    $preloader.delay(1000).fadeOut();
-	});
-
-
 	// Убираем placeholder при клике в поле
 	$('input,textarea').focus(function(){
 	    $(this).data('placeholder',$(this).attr('placeholder'))
@@ -24,6 +29,10 @@ $(document).ready(function() {
 			}else{
 				$(this).removeClass('active');
 				$(".main_menu").css('top', '-100vh'); 
+				$(".menu .submenu").removeClass('show'); 
+				$(".menu .submenu").children('ul').slideUp(500);
+				$(".menu .submenu2").removeClass('show'); 
+				$(".menu .submenu2").children('ul').slideUp(500);
 			}
 		});
 	//};
@@ -45,14 +54,14 @@ $(document).ready(function() {
 	});
 	
 	// animation
-	$(window).on('load', function () {
-		if ( window.innerWidth>0 ){
-			$('#header').toggleClass("hidden");
-			$('.main_section').toggleClass("hidden");
-			$('#header').addClass('animated');
-			$('#main_screen').addClass('animated');
-		};
-	});
+	//$(window).on('load', function () {
+		// if ( window.innerWidth>0 ){
+		// 	$('#header').toggleClass("hidden");
+		// 	$('.main_section').toggleClass("hidden");
+		// 	$('#header').addClass('animated');
+		// 	$('#main_screen').addClass('animated');
+		// };
+	//});
 		$(window).on('load scroll', function(){
 			$('.main_section').each(function(){
 			if ( $(this).offset().top < ($(document).scrollTop() + window.innerHeight*0.6 ) ) {
@@ -60,6 +69,27 @@ $(document).ready(function() {
 			}
 			});
 		});
+
+		if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
+			$('.menu .submenu > a').on('click', function(e){
+				if( !$(this).parent().hasClass('show') ) {
+					$(".menu .submenu").removeClass('show'); 
+					$(".menu .submenu").children('ul').slideUp(500);
+					$(this).parent().addClass('show');  
+					$(this).parent().children('ul').slideDown(500);
+					e.preventDefault();
+				}
+			});
+			$('.menu .submenu2 > a').on('click', function(e){
+				if( !$(this).parent().hasClass('show') ) {
+					$(".menu .submenu2").removeClass('show'); 
+					$(".menu .submenu2").children('ul').slideUp(500);
+					$(this).parent().addClass('show');  
+					$(this).parent().children('ul').slideDown(500);
+					e.preventDefault();
+				}
+			});
+		};
 	
 
 	// tab switching
@@ -121,6 +151,8 @@ $(document).ready(function() {
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	    dots: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		responsive: [
 			{
 				breakpoint: 901,
@@ -140,6 +172,8 @@ $(document).ready(function() {
 		fade: true,
 		//infinite: false,
 		//autoplay: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		arrows: true,
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
@@ -151,6 +185,8 @@ $(document).ready(function() {
 		dots: false,
 		//infinite: false,
 		focusOnSelect: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
 	    asNavFor: '.services_container .text_slider',
 		responsive: [
 			{
@@ -214,7 +250,7 @@ $(document).ready(function() {
 				}
 			},
 			{
-				breakpoint: 450,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 1,
 				}
@@ -241,7 +277,7 @@ $(document).ready(function() {
 				}
 			},
 			{
-				breakpoint: 450,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 1,
 				}

@@ -238,6 +238,12 @@
 }
 
 @media screen and (max-width: 450px) {
+    #campaigns .page_width {
+        padding-bottom: 0px;
+    }
+    .campaigns_slider {
+        padding-bottom: 0;
+    }
     .campaigns_slider .item {
         .text {
             width: 100%;

@@ -139,6 +139,18 @@
     .min_forms{
         width: 450px;
     }
+
+    .content .contacts {
+        width: 53%;
+
+        > * {
+            margin-right: 30px;
+        }
+
+        p,.social {
+            width: 250px;
+        }
+    }
 }
 @media screen and (max-width:1200px){
     .min_forms{
@@ -157,6 +169,33 @@
 
     #map{
         height: 500px;
+    }
+
+    .content .contacts {
+        width: calc(100% - 360px);
+        font-size: 18px;
+
+        >* {
+            margin-right: 0;
+        }
+
+        >a {
+            width: 180px;
+        }
+        p,.social {
+            width: 230px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:850px){
+
+    .content .contacts {
+        justify-content: start;
+        p,.social {
+            width: 100%;
+        }
     }
 }
 

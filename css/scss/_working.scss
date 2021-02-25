@@ -1,7 +1,6 @@
 /* start working styles */ 
 
 #working {
-
     .page_width {
         padding-top: 100px;
         padding-bottom: 1px;
@@ -112,34 +111,110 @@
             img {
                 position: relative;
                 z-index: 2;
-                max-height: 100%;
-                max-width: 100%;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
         }
     }
 }
 
-@media screen and (max-width: 1600px) {
+// @media screen and (max-width: 1600px) {
     
-}
+// }
 @media screen and (max-width: 1400px) {
-    
+    .working_slider {
+        margin: 0 -32px;
+        .slick-next {
+            right: 65px;
+        }
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 1300px) {
+    #working {
+        .page_width {
+            padding-top: 70px;
+        }
+    }
 }
 
-@media screen and (max-width: 1100px) {
-    
+@media screen and (max-width: 1030px) {
+    #working {
+        .page_width {
+            padding-top: 50px;
+        }
+    }
+    .working_slider {
+        margin: 0 0px;
+        padding:  {
+            left: 0;
+            right: 0;
+        }
+        .slick-list {
+            padding-bottom: 50px;
+        }
+        .slick-prev {
+            right: 55px;
+        }
+        .slick-next {
+            right: 0px;
+        }
+        .item .text {
+            width: 50%;
+            h3 {
+                font-size: 100px;
+                line-height: 110px;
+            }
+            .desc {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
-    
+    .working_slider .item .text h3 {
+        font-size: 80px;
+        line-height: 80px;
+    }
 }
 @media screen and (max-width: 600px) {
-    
+    #working {
+        .page_width {
+            padding-top: 30px;
+        }
+    }
+    .working_slider {
+        padding-top: 0;
+
+        .slick-arrow:before {
+            width: 14px;
+            height: 14px;
+            top: 12px;
+        }
+        .item {
+            .text {
+                float: none;
+                width: auto;
+                padding-left: 0;
+                margin-bottom: 30px;
+                h3 {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+                .desc {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .image {
+                width: 100%;
+                max-width: 500px;
+                height: 300px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {

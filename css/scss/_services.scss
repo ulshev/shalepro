@@ -247,6 +247,7 @@
             border-image-slice: 1;
             border-image-source: linear-gradient(161.57deg, #CCA04A 11.76%, #FFE2AE 100%);
             @include transition(all);
+            z-index: 1;
         }
 
         &::before {
@@ -263,7 +264,7 @@
 
         .image {
             position: relative;
-            width: 400px;
+            max-width: 400px;
             height: 400px;
             margin: 0 auto 0;
             //opacity: 0.4;
@@ -312,6 +313,7 @@
             height: 100%;
             opacity: 0;
             @include transition(all);
+            z-index: 2;
 
             .button {
                 position: absolute;
@@ -458,7 +460,18 @@
             right: 50px;
         }
     }
+
+    .services_page .item .image {
+        height: 350px;
+    }
 }
+
+@media screen and (max-width: 1200px) {
+    .services_page .item .image {
+        height: 300px;
+    }
+}
+
 
 @media screen and (max-width: 1300px) {
     #services {
@@ -563,6 +576,34 @@
             }
         }
     }
+    .services_page {
+        margin: -20px -15px 40px;
+        .buttons {
+            padding-top: 0px;
+        }
+    }
+    .services_page .item {
+        &::before, &::after {
+            height: 250px;
+        }
+
+        &::before {
+            width: 90px;
+        }
+        &::after {
+            width: 45px;
+        }
+        .image {
+            height: 250px;
+        }
+        .services_menu ul {
+            width: 220px;
+    
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -584,6 +625,13 @@
             }
         }
     }
+    .services_page {
+        margin: 0px -15px 40px;
+        .item {
+            width: calc(50% - 30px);
+        }
+    }
+
 }
 @media screen and (max-width: 600px) {
     #services {
@@ -641,8 +689,18 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    
+@media screen and (max-width: 500px) {
+    .services_page {
+        margin: 0px -15px 20px;
+        .item {
+            width: calc(100% - 30px);
+
+            .name {
+                height: auto;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }
 
 /* end services styles */

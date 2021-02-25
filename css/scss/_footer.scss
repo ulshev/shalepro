@@ -188,128 +188,108 @@ footer {
     
 // }
 
-@media screen and (max-width: 1200px) {
-	footer .page_width {
-		padding-bottom: 40px;
-	}
-	#foo_logo {
-		width: 220px;
-	}
-    footer .social {
-		padding-right: 25px;
-	}
-
+@media screen and (max-width: 1300px) {
 	footer {
-		.foo_bottom {
-			flex-wrap: wrap;
-			.cont {
-				margin-bottom: 20px;
-			}
-			.cont:nth-child(n+4) {
-				order: 2;
-			}
-
+		.page_width { 
+			padding-top: 70px;
+			padding-bottom: 70px;
 		}
-	}
+		.foo_right {
+			width: 270px;
+		}
+	} 
 }
 
-@media screen and (max-width: 1030px) {
-	#foo_logo {
-		width: 190px;
-	}
-	footer .page_width {
-		padding-top: 50px;
-		padding-bottom: 20px;
-	}
-    footer .foo_bottom {
-		padding-top: 40px;
-	}
-	footer .social {
-		padding-right: 0px;
-	}
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
 	footer {
-		.foo_bottom {
-			.cont {
-				margin-right: 20px;
-			}
-			.cont:nth-child(n+4) {
-				order: 0;
-			}
+		.page_width { 
+			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 	}
-	
+	footer .foo_menu ul:last-child {
+		display: none;
+	}
+	footer .contacts {
+		font-size: 18px;
+		line-height: 24px;
+	}
 	footer .foo_left {
-		width: 60%;
+		width: 215px;
 	}
-	footer .foo_menu {
-		width: 40%;
-		.column {
-			&:nth-child(1), &:nth-child(2) {
-				display: none;
-			}
-		}
-	}
-	footer .social {
-		margin-top: -30px;
-		margin-left: 60%;
-		text-align: left;
-		margin-bottom: 40px;
+	footer .foo_right {
+		width: 240px;
 	}
 }
 @media screen and (max-width: 800px) {
-	.cont a {
-		font-size: 16px;
-		line-height: 24px;
-	}
-	footer {
-		.foo_bottom {
-			.cont {
-				margin-right: 10px;
-			}
+	footer .foo_menu {
+		margin: 0 260px 0 235px;
+		li {
+			padding-right: 0;
 		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	footer .foo_menu {
+		display: none;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	footer .page_width {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-    footer .foo_bottom {
-		padding-top: 30px;
-	}
-    footer .foo_bottom .cont:nth-child(n+4) {
-		margin-right: 30px;
-	}
-
-}
-@media screen and (max-width: 500px) {
-	footer .foo_left {
-		width: auto;
-		float: none;
-		margin-bottom: 30px;
-	}
-	footer .foo_menu {
-		width: auto;
-		h5 {
-			margin-bottom: 15px;
+	footer {
+		.page_width { 
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 	}
-	footer .social {
-		margin-top: -30px;
-		margin-left: 0;
+	footer .contacts {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+@media screen and (max-width: 550px) {
+	footer {
+		text-align: center;
+		.foo_left {
+			margin-bottom: 15px;
+			float: none;
+			width: auto;
+		}
+		.foo_right {
+			float: none;
+			width: auto;
+		}
+		#foo_logo {
+			margin: 0 auto 20px;
+		}
+
+		.foo_text p {
+			margin-bottom: 15px;
+		}
+
+		.contacts {
+			max-width: none;
+
+			a {
+				margin-bottom: 20px;
+			}
+
+			.tel {
+				margin-right: 30px;
+			}
+		}
+		#copy {
+			max-width: none;
+			margin-bottom: 15px;
+		}
+		.social {
+			padding-top: 10px;
+		}
 	}
 }
 @media screen and (max-width: 450px) {
-	footer .foo_bottom .cont {
-		margin-right: 0px;
-	}
-	footer .foo_bottom .cont:nth-child(n+4) {
-		margin-right: 0px;
-	}
+	
 }
 
 

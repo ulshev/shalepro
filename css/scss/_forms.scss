@@ -1,7 +1,7 @@
 /* start forms styles */ 
 
 #main_form {
-	z-index: 2;
+	//z-index: 2;
 	//overflow: visible;
 	//display: flex;
 
@@ -473,6 +473,9 @@
 		form {
 			margin-right: 0;
 		}
+		.image::after {
+			display: none;
+		}
 	}
 	.form_block {
 		.textarea {
@@ -488,6 +491,9 @@
 
 @media screen and (max-width: 600px) {
     #main_form {
+		h2 {
+			margin-right: 0;
+		}
 		.image {
 			display: none;
 		}

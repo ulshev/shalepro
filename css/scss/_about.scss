@@ -3,10 +3,10 @@
 #about_page {
     background-image: url(images/bg_about_page.jpg);
     margin-bottom: 0;
-    // .page_width {
-    //     padding-top: 100px;
-    //     padding-bottom: 159px;
-    // }
+    .page_width {
+        //padding-top: 100px;
+        padding-bottom: 1px;
+    }
 
     h1 {
         float: left;
@@ -97,30 +97,85 @@
 }
 
 
-@media screen and (max-width: 1600px) {
+// @media screen and (max-width: 1600px) {
     
-}
+// }
 @media screen and (max-width: 1400px) {
-    
+    #about_page {
+        .slogan {
+            width: 440px;
+        }
+        .text_block .text {
+            padding-bottom: 0px;
+        }
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 1300px) {
+    #about_page .text_block {
+        margin-bottom: 100px;
+    }
 }
 
-@media screen and (max-width: 1100px) {
-    
+@media screen and (max-width: 1030px) {
+    #about_page .all_link {
+        margin-top: -5px;
+    }
+    #about_page .text_block {
+        margin-bottom: 70px;
+    }
+    #about_page .slogan {
+        width: 360px;
+        padding-right: 0;
+        left: 40px;
+        .logo img {
+            width: 200px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
 }
 
-@media screen and (max-width: 800px) {
-    
+@media screen and (max-width: 900px) {
+    #about_page .all_link {
+        margin-top: -15px;
+    }
+    #about_page {
+        .slogan {
+            width: 100%;
+            max-width: 500px;
+            left: 0px;
+            clear: both;
+        }
+    }
 }
 @media screen and (max-width: 600px) {
-    
+    #about_page .text_block {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        .image {
+            display: none;
+        }
+        .text {
+            width: 95%;
+            padding-left: 20px;
+        }
+    }
 }
 
-@media screen and (max-width: 450px) {
-    
+@media screen and (max-width: 400px) {
+    #about_page .all_link {
+        display: none;
+    }
+    #about_page {
+        .slogan {
+            p {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 /* end about styles */

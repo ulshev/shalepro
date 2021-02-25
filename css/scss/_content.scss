@@ -178,13 +178,24 @@ div.content {
 .gallery_container {
     margin-bottom: 100px;
     clear: both;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
     .tab_buttons {
         margin-bottom: 43px;
+    }
+    .reviews_container {
+        align-items: flex-start;
     }
 }
 
 .gallery {
     padding-bottom: 60px;
+
+    .slick-track {
+        min-width: 100%;
+    }
 
     .slick-arrow {
         bottom: 0;
@@ -261,19 +272,26 @@ div.content {
     height: 500px;
     margin-top: 40px;
     margin-bottom: 100px;
+
+    img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .right_image, .left_image {
     position: relative;
     max-width: 49%;
-    margin: 0 0 80px 160px;
+    margin: 0 0 100px 160px;
 
     &::before {
         content: '';
         position: absolute;
-        top: 11.6%; //9.8%;
-        right: 8%;
-        width: 99.5%;
-        height: 99.4%; //86%;
+        top: 80px; //11.6%; //9.8%;
+        right: 60px; //8%;
+        width: 100%;
+        height: 100%; //86%;
+        box-sizing: border-box;
         border: 2px solid;
         border-image-slice: 1;
         border-image-source: linear-gradient(116.57deg, #FFE2AE 33.33%, #CCA04A 100%);
@@ -284,11 +302,14 @@ div.content {
         height: 80px;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 100%;
     }
 
     img {
         position: relative;
         z-index: 1;
+        max-width: 100%;
     }
 }
 .right_image {
@@ -345,26 +366,268 @@ div.content {
     }
 }
 
-@media screen and (max-width: 1600px) {
+// @media screen and (max-width: 1600px) {
     
-}
+// }
 @media screen and (max-width: 1400px) {
-    
+    .gallery {
+        margin-left: -32px;
+        margin-right: -32px;
+    }
+    .gallery.gallery_projects {
+        margin-bottom: 70px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 1300px) {
+    .main_top {
+        margin-bottom: 70px;
+    }
+    .campaigns_block {
+        padding: 40px 40px 45px;
+
+        &::after {
+            bottom: 45px;
+            right: 40px;
+            width: 130px;
+            height: 65px;
+        }
+    }
+    .content .text {
+        padding-bottom: 60px;
+    }
+    .top_image {
+        height: 450px;
+        margin-bottom: 70px;
+    }
+
+    .right_image {
+        margin-left: 80px;
+
+        &::before {
+            right: 40px;
+        }
+    }
+    .right_image + p, .left_image + p {
+        padding-top: 0px;
+    }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1030px) {
+    .breadcrumbs {
+        margin-bottom: 40px;
+        padding-top: 30px;
+    }
+    .main_top {
+        margin-bottom: 50px;
+        .page_width {
+            min-height: 450px;
+        }
+        .button {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .campaigns_block {
+        padding: 30px 30px 5px;
+        width: 40%;
+        left: auto;
+        right: 30px;
+
+        &::after {
+            bottom: 35px;
+            right: 30px;
+            width: 110px;
+            height: 55px;
+        }
+        .desc {
+            min-height: auto;
+        }
+        h3 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        .button {
+            margin-top: 0;
+        }
+    }
+    .content .text {
+        padding-bottom: 40px;
+    }
+    .gallery {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: {
+            left: 0;
+            right: 0;
+        }
+        .slick-list {
+            margin: 0 -10px;
+        }
+        .item {
+            height: 200px;
+            margin: 0 10px;
+
+            &.video a::after {
+                background-size: 120px 120px;
+            }
+        }
+    }
+    .gallery.gallery_projects {
+        margin-bottom: 50px;
+        .item {
+            height: 300px;
+        }
+    }
+
+    .content .text h2 {
+        margin-bottom: 30px;
+    }
+
+    .content .page_width h2:first-child {
+        float: left;
+    }
+    .content .page_width h2:first-child + .all_link {
+        margin-top: 11px;
+    }
+    .content .page_width h2:first-child + div {
+        clear: left;
+    }
+    .content .page_width h2:first-child + p {
+        clear: left;
+    }
+    .top_image {
+        height: 350px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        
+        .campaigns_block {
+            width: 55%;
+            padding-bottom: 35px;
+        }
+    }
+
+    .two_col {
+        display: block;
+
+        .left_col {
+            width: auto;
+            position: relative;
+        }
+
+        .right_col {
+            width: auto;
+
+            .min_forms {
+                position: relative;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto 50px;
+            }
+        }
+    }
     
+    .content .catalog {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    
+    .breadcrumbs {
+        margin-bottom: 30px;
+    }
+    .campaigns_block {
+
+        &::after {
+            display: none;
+        }
+    }
+    .gallery.gallery_projects {
+
+        .item {
+            height: 250px;
+        }
+    }
+
+    .right_image, .left_image {
+        float: none;
+        width: auto;
+        max-width: none;
+
+        &::before {
+            right: 40px;
+            top: 60px
+        }
+        strong {
+            height: 60px;
+        }
+    }
+    .right_image {
+        margin-left: 40px;
+    }
 }
 @media screen and (max-width: 600px) {
-    
+    .main_top {
+        margin-bottom: 30px;
+        h1, .text {
+            max-width: none;
+            width: auto;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    }
+
+    .campaigns_block {
+        position: relative;
+        right: auto;
+        width: auto;
+    }
+    .content .text {
+        padding-bottom: 0px;
+    }
+    .main_section h2 {
+        margin-bottom: 20px;
+        margin-right: 130px;
+    }
+
+    .content .text h2 {
+        margin-bottom: 20px;
+    }
+
+    .top_image {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        img {
+            height: auto;
+        }
+        
+        .campaigns_block {
+            //position: absolute;
+            width: 100%;
+            padding-bottom: 25px;
+        }
+    }
+
+    .right_image {
+        margin-left: 20px;
+
+        &::before {
+            right: 20px;
+        }
+    }
+
+    .gallery_container {
+        padding-top: 30px;
+
+        .tab_buttons {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
